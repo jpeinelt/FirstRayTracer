@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280352C1269B674900193714 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280352C0269B674900193714 /* Sphere.swift */; };
+		28D7313F26FF67010090A8C5 /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D7313E26FF67010090A8C5 /* Renderable.swift */; };
 		28E559272692FF2200A97E05 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E559262692FF2200A97E05 /* main.swift */; };
+		28E5592E269301CF00A97E05 /* ImageExportable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E5592D269301CF00A97E05 /* ImageExportable.swift */; };
+		28E55930269303DA00A97E05 /* PPMExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E5592F269303DA00A97E05 /* PPMExporter.swift */; };
+		28E559322694C07100A97E05 /* ColorVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E559312694C07100A97E05 /* ColorVector.swift */; };
+		28E55934269716D100A97E05 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E55933269716D100A97E05 /* Ray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		280352C0269B674900193714 /* Sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
+		28D7313E26FF67010090A8C5 /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
 		28E559232692FF2200A97E05 /* FirstRayTracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstRayTracer; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E559262692FF2200A97E05 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		28E5592D269301CF00A97E05 /* ImageExportable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExportable.swift; sourceTree = "<group>"; };
+		28E5592F269303DA00A97E05 /* PPMExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPMExporter.swift; sourceTree = "<group>"; };
+		28E559312694C07100A97E05 /* ColorVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorVector.swift; sourceTree = "<group>"; };
+		28E55933269716D100A97E05 /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				28E559262692FF2200A97E05 /* main.swift */,
+				28E5592D269301CF00A97E05 /* ImageExportable.swift */,
+				28E5592F269303DA00A97E05 /* PPMExporter.swift */,
+				28E559312694C07100A97E05 /* ColorVector.swift */,
+				28E55933269716D100A97E05 /* Ray.swift */,
+				28D7313E26FF67010090A8C5 /* Renderable.swift */,
+				280352C0269B674900193714 /* Sphere.swift */,
 			);
 			path = FirstRayTracer;
 			sourceTree = "<group>";
@@ -89,7 +107,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					28E559222692FF2200A97E05 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -119,7 +137,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E55930269303DA00A97E05 /* PPMExporter.swift in Sources */,
 				28E559272692FF2200A97E05 /* main.swift in Sources */,
+				28D7313F26FF67010090A8C5 /* Renderable.swift in Sources */,
+				280352C1269B674900193714 /* Sphere.swift in Sources */,
+				28E559322694C07100A97E05 /* ColorVector.swift in Sources */,
+				28E5592E269301CF00A97E05 /* ImageExportable.swift in Sources */,
+				28E55934269716D100A97E05 /* Ray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +268,7 @@
 		28E5592B2692FF2200A97E05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Z7XU5GQVA;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -255,6 +280,7 @@
 		28E5592C2692FF2200A97E05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Z7XU5GQVA;
 				ENABLE_HARDENED_RUNTIME = YES;
